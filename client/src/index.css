@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'JetBrains Mono', monospace;
+
+  /* Dark Theme Palette */
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  
+  --primary: 263 70% 50%;
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 222 47% 11%;
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 223 47% 11%;
+  --muted-foreground: 215 20% 65%;
+  
+  --accent: 263 70% 50%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --ring: 263 70% 50%;
+  
+  --card: 224 71% 4%;
+  --card-foreground: 213 31% 91%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight text-white;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-secondary/30 backdrop-blur-xl border border-white/5 shadow-xl;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+  }
+
+  .qr-gradient-border {
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent))) border-box;
+    border: 2px solid transparent;
+  }
+}
