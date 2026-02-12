@@ -39,6 +39,10 @@ History generate QR code !
 <img width="221" height="244" alt="image" src="https://github.com/user-attachments/assets/1440c90c-96f2-430b-8b93-9dba99d8c2c5" />
 
 
+# Database Format 
+
+<img width="413" height="259" alt="image" src="https://github.com/user-attachments/assets/d008efc6-8fd3-46f7-a7a9-df8b52b623f9" />
+
 
 # Link Demo/Test
 LINK ---> https://qr-code-maker--chewbrandon9911.replit.app/
